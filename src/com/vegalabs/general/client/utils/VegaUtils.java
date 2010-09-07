@@ -44,7 +44,8 @@ public interface VegaUtils {
 
 	public abstract void requestNavigateTo(String view, String optParams);
 	public abstract String retrFromState(String stringValue);
-	public abstract void reportEvent(String string, String string2,
-			String projectId, int i);
+	public abstract void reportEvent(String eventName, String action, String label, int value);
+	public abstract void putToState(String key, String value);
+	public abstract String retrUserThumbnailUrl();
 
 }

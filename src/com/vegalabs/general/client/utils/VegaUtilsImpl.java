@@ -8,6 +8,11 @@ import com.google.gwt.user.client.Window;
 public class VegaUtilsImpl implements VegaUtils {
 	private static Map<String,String> state = new HashMap<String, String>();
 	private static Map<String,String> privateState = new HashMap<String, String>();
+	
+	static{
+		state.put("projectId", "vega113-googlewave-testaug28newpost1");
+		state.put("projectName", "testaug28newpost1");
+	}
 	@Override
 	public void adjustHeight() {
 		// TODO Auto-generated method stub
@@ -75,12 +80,12 @@ public class VegaUtilsImpl implements VegaUtils {
 
 	@Override
 	public String retrHostId() {
-		return "vega113@googlewave.com";
+		return "vega116111111@googlewave.com";
 	}
 
 	@Override
 	public String retrUserId() {
-		return "vega113@googlewave.com";
+		return "vega116111111@googlewave.com";
 	}
 
 	@Override
@@ -104,6 +109,17 @@ public class VegaUtilsImpl implements VegaUtils {
 	public void showTimerMessage(String msg, int seconds) {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public void putToState(String key, String value) {
+		state.put(key, value);
+		
+	}
+
+	@Override
+	public String retrUserThumbnailUrl() {
+		return "https://lh6.googleusercontent.com/_tsWs83xehHE/TFgD2QbwzYI/AAAAAAAAFbg/O-Z1aVTdEvs/s104-c/me_cy_very_small.jpg";
 	}
 
 }

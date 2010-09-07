@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module>
+<module rename-to='vegageneral'>
   <!-- Inherit the core Web Toolkit stuff.                        -->
   <inherits name='com.google.gwt.user.User'/>
 
@@ -12,6 +12,7 @@
 
   <!-- Other module inherits                                      -->
 <inherits name="com.google.gwt.json.JSON" />
+<inherits name="com.allen_sauer.gwt.log.gwt-log-FATAL" />
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.vegalabs.general.client.VegaGeneral'/>
 
